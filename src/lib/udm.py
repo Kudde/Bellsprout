@@ -85,7 +85,7 @@ class UDM:
     def median_mm(self, tray_height):
 
         samples = []
-        for count in range(100):
+        for count in range(1000):
             utime.sleep_us(100)
             m = self.measure_mm()
             if m < 0 or m >= tray_height: # filter outside of bounds
